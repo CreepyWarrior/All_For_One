@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "MushroomStore_backend": {
+      "main": "src/MushroomStore_backend/main.mo",
+      "type": "motoko"
+    },
+    "MushroomStore_frontend": {
+      "dependencies": [
+        "MushroomStore_backend"
+      ],
+      "source": [
+        "src/MushroomStore_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "MushroomStore_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
